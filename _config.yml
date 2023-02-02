@@ -20,6 +20,7 @@
 
 title: "Azure Apim Hands on Lab"
 #email: your-email@example.com
+repository: "reidav/apim-lab"
 description: >- # this means to ignore newlines until "baseurl:"
   This hands-on-lab will guide you through the different concepts around Azure API Management, from the creation to the DevOps, including good practices in terms of versioning, security and so on. It is designed to bring customers and partners to a 200-level understanding of Azure Api Management. 
 #baseurl: "" # the subpath of your site, e.g. /blog
