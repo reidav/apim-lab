@@ -16,7 +16,7 @@ Using API Management to expose your GraphQL APIs, you can:
 
 ## Import and test an existing GraphQL API
 
-Let's import a new GraphQL API, using the [Star Wars GraphQL API](https://swapi-graphql.azure-api.net/graphql).
+Let's import a new GraphQL API, using the [Star Wars GraphQL API](https://apimlab-4fc0822-aca-swapi-gql.yellowbay-6569e576.westeurope.azurecontainerapps.io/).
 
 - Select **Add API**, under **define a new API**, select the **GraphQL** icon.
 
@@ -31,7 +31,7 @@ Let's import a new GraphQL API, using the [Star Wars GraphQL API](https://swapi-
     |----------------|-------|
     | **Display name** | The name by which your GraphQL API will be displayed. |
     | **Name** | Raw name of the GraphQL API. Automatically populates as you type the display name. |
-    | **GraphQL API endpoint** | The base URL with your GraphQL API endpoint name. <br /> For example: *`https://example.com/your-GraphQL-name`*. You can also use a common "Star Wars" GraphQL endpoint such as `https://swapi-graphql.azure-api.net/graphql` as a demo. |
+    | **GraphQL API endpoint** | The base URL with your GraphQL API endpoint name. <br /> For example: *`https://example.com/your-GraphQL-name`*. You can also use a common "Star Wars" GraphQL endpoint such as `https://apimlab-4fc0822-aca-swapi-gql.yellowbay-6569e576.westeurope.azurecontainerapps.io/` as a demo. |
     | **Upload schema** | Optionally select to browse and upload your schema file to replace the schema retrieved from the GraphQL endpoint (if available).  |
     | **Description** | Add a description of your API. |
     | **URL scheme** | Select **HTTP**, **HTTPS**, or **Both**. Default selection: *Both*. |
