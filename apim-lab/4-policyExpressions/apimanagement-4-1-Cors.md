@@ -20,7 +20,7 @@ We have already configured the *cors* policy for our APIs in labs 2 & 3. Below i
         <cors allow-credentials="true">
             <allowed-origins>
                 <origin>https://apim-sk-12212021.developer.azure-api.net</origin>
-                <origin>https://colors-web.azurewebsites.net/</origin>
+                <origin>https://apimlab-4fc0822-aca-coloursweb.yellowbay-6569e576.westeurope.azurecontainerapps.io//</origin>
             </allowed-origins>
             <allowed-methods preflight-result-max-age="300">
                 <method>*</method>

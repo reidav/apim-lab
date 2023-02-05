@@ -71,8 +71,8 @@ Let's import a new GraphQL API, using the [Star Wars GraphQL API](https://swapi-
   }
 
   type User {
-      id: String!
       name: String!
+      hair_color: String!
   }
   ```
 
@@ -92,16 +92,17 @@ Let's import a new GraphQL API, using the [Star Wars GraphQL API](https://swapi-
           <http-data-source>
               <http-request>
                   <set-method>GET</set-method>
-                  <set-url>https://swapi.dev/api/people/</set-url>
+                  <set-url>https://apimlab-4fc0822-aca-swapi.yellowbay-6569e576.westeurope.azurecontainerapps.io/api/people/</set-url>
               </http-request>
               <http-response>
                 <set-body template="liquid">
                   [ {% raw %}
-                      {% JSONArrayFor elem in body.results %}
-                          {
-                              "name": "{{elem.name}}"
-                          }
-                      {% endJSONArrayFor %}
+                        {% JSONArrayFor elem in body %}
+                            {
+                                "hair_color": "{{elem.hair_color}}",
+                                "name": "{{elem.name}}"
+                            }
+                        {% endJSONArrayFor %}
                   ] {% endraw %}
                 </set-body>
               </http-response>

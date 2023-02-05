@@ -10,7 +10,7 @@ nav_order: 2
 
 Instead of importing operations one-by-one, you can also import a full API. The [OpenAPI specification](https://www.openapis.org/) (aka [Swagger](https://swagger.io)) is a definition format to describe RESTful APIs. The specification creates a RESTful interface for easily developing and consuming an API by effectively mapping all the resources and operations associated with it.
 
-As a demo we will use an API that offers a simple calculator service : [Calc API](http://calcapi.cloudapp.net)
+As a demo we will use an API that offers a simple calculator service : [Calc API](https://apimlab-4fc0822-aca-calcapi.yellowbay-6569e576.westeurope.azurecontainerapps.io)
 
 > This is an older API and only available via `HTTP`. APIM provides means for fronting access to it via `HTTPS`, which further demonstrates how APIM can help with a secure, uniform facade while the backend implementation can be reworked and upgraded.
 
@@ -20,7 +20,7 @@ As a demo we will use an API that offers a simple calculator service : [Calc API
 2) Click on *Add API*.  
 3) Under *Create from definition* select *OpenAPI*.  
 4) Select the *Full* option in the *Create from OpenAPI specification* dialog.  
-5) Enter `http://calcapi.cloudapp.net/calcapi.json` as the *OpenAPI specification* value. You should subsequently see *Display name*, *Name*, and *Description* populate.  
+5) Enter `https://apimlab-4fc0822-aca-calcapi.yellowbay-6569e576.westeurope.azurecontainerapps.io/calcapi.json` as the *OpenAPI specification* value. You should subsequently see *Display name*, *Name*, and *Description* populate.  
     > **Note the intentional use of `http` instead of `https` as this backend does not presently support `https`.**  
 6) While the backend service only runs on `HTTP`, we need to **set URL scheme to `Both`** to allow for APIM ingress to occur on HTTPS for callers such as the Developer Portal.  
 7) Set the *API URL suffix* to `calc`.  

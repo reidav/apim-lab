@@ -75,7 +75,7 @@ A failed request is a request which:
 
 ### Generating Test Requests
 
-Any request you make to the Colors API in APIM will be subject to being received by Application Insights (recall the 100% sampling). To generate a large amount of requests quickly, you can invoke the API via the [Colors](https://colors-web.azurewebsites.net) website. As we are presently caching the output for 15 seconds, you may get a lot of requests with the same color. Please feel free to disable the output caching in the Colors API if you would like to see more variety.
+Any request you make to the Colors API in APIM will be subject to being received by Application Insights (recall the 100% sampling). To generate a large amount of requests quickly, you can invoke the API via the [Colors](https://apimlab-4fc0822-aca-coloursweb.yellowbay-6569e576.westeurope.azurecontainerapps.io/) website. As we are presently caching the output for 15 seconds, you may get a lot of requests with the same color. Please feel free to disable the output caching in the Colors API if you would like to see more variety.
 
 ### Viewing Azure Application Insights Data
 

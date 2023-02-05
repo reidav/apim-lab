@@ -20,7 +20,7 @@ Instead of developing an API, for this lab you will use the existing [*Star Wars
 2) Click on *HTTP - Manually define an HTTP API*.  
 3) Select the *Full* option in the *Create an HTTP API* dialog.  
 4) Enter *Display name* `Star Wars`, *Name* `star-wars`, and, optionally, *Description*.  
-5) Assign `https://swapi.dev/api` to the *Web service URL*.  
+5) Assign `https://apimlab-4fc0822-aca-swapi.yellowbay-6569e576.westeurope.azurecontainerapps.io/api` to the *Web service URL*.  
 6) Keep the *URL scheme* at `HTTPS` as we strive to enforce HTTPS only.  
 7) Set the *API URL suffix* to `sw`. This allows us to compartmentalize the APIM URLs for distinct APIs.  
 8) Assign *Starter* and *Unlimited* products.  

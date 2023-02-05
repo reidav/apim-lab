@@ -8,11 +8,11 @@ nav_order: 4
 
 ## Calling API and testing Subscription Keys
 
-Let's add another API, the [Colors API](https://colors-api.azurewebsites.net/swagger/v1/swagger.json).
+Let's add another API, the [Colors API](https://apimlab-4fc0822-aca-coloursapi.yellowbay-6569e576.westeurope.azurecontainerapps.io/swagger/v1/swagger.json).
 
 ![APIM Colors API](../../assets/images/apim-color-api.png)
 
-- Create a new API with OpenAPI specification and import swagger from <https://colors-api.azurewebsites.net/swagger/v1/swagger.json>. 
+- Create a new API with OpenAPI specification and import swagger from <https://apimlab-4fc0822-aca-coloursapi.yellowbay-6569e576.westeurope.azurecontainerapps.io/swagger/v1/swagger.json>. 
 - This time we will choose to not provide API URL suffix. Without API URL suffix, there could be endpoint conflicts, you can always leverage [rewrite-uri](https://learn.microsoft.com/en-us/azure/api-management/api-management-transformation-policies#RewriteURL) policy to convert a request URL form to the form expected by the backend web service. 
 
   ![APIM Add Colors API](../../assets/images/apim-add-color-api-1.png)
@@ -39,7 +39,7 @@ Let's add another API, the [Colors API](https://colors-api.azurewebsites.net/swa
 
 API Management uses rate limiting to protect APIs from being overwhelmed and helps prevent exposure to DDoS attacks. As APIM sits in between your API and their callers, it effectively governs access to your APIs.  
 
-We are going to use the [Colors](https://colors-web.azurewebsites.net) website to demonstrate how rate limiting is applied. The website displays 500 lights. Each light will randomly make a call to the Get random color API and then apply the returned color to the lights.
+We are going to use the [Colors](https://apimlab-4fc0822-aca-coloursweb.yellowbay-6569e576.westeurope.azurecontainerapps.io/) website to demonstrate how rate limiting is applied. The website displays 500 lights. Each light will randomly make a call to the Get random color API and then apply the returned color to the lights.
 
 ![Colors Website](../../assets/images/color-website.png)
 
@@ -51,11 +51,11 @@ First, we need to enable CORS for the domain name of the frontend. To achieve th
 
   ![APIM Policy CORS All APIs](../../assets/images/apim-policy-cors-all-apis-1.png)  
 
-- Here we will see this form where we can add the domain name of our frontend `https://colors-web.azurewebsites.net` or the `*` for all domains. Press *Add allowed origin*, enter the URL, then press *Save*.
+- Here we will see this form where we can add the domain name of our frontend `https://apimlab-4fc0822-aca-coloursweb.yellowbay-6569e576.westeurope.azurecontainerapps.io/` or the `*` for all domains. Press *Add allowed origin*, enter the URL, then press *Save*.
 
   ![APIM Policy CORS All APIs](../../assets/images/apim-policy-cors-all-apis-2.png)
 
-- After enabling CORS in APIM lets go back to our frontend <https://colors-web.azurewebsites.net> and follow these steps:
+- After enabling CORS in APIM lets go back to our frontend <https://apimlab-4fc0822-aca-coloursweb.yellowbay-6569e576.westeurope.azurecontainerapps.io/> and follow these steps:
 
 - Click on the hamburger menu next to *Colors* in the top left corner.
 - Click on *Config*.
